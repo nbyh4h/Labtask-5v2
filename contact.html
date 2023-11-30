@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+	<link rel="stylesheet" href="styles1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<header>
+	 <marquee>DFT40163 S1 2023/2024 LAB TASK 5</marquee>
+    <h1>DFT40163 S1 2023/2024 LAB TASK 5</h1>
+    <nav>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<body>
+    <h1>Contact Us</h1>
+    
+    <p><button id="whatsappButton"></p>
+        <b>Whatsapp Us</b>
+    </button>
+
+    <P><button id="emailButton"><P>
+        <b>Email Us</b>
+    </button>
+
+    <P><button id="callButton"></p>
+       <b>Call Us</b>
+    </button>
+	
+	<div data-role="page" id="about-us"> 
+	<div data-role="main" class="au-content">
+		<h2>Testimonials</h2>
+		<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+      <div data-role="collapsible">
+		
+		<div class="round-frame">
+        <img src="testimonial/org1.jpg" alt="org1">
+		</div>
+		<div class = "description">
+		<div class = "name">
+			<h2>Jane | CEO at TechGenius Solutions Inc.</h2>
+		</div>
+			<p>"Working with them has been an absolute game-changer for our coding needs! Their team's expertise and 
+			dedication to delivering high-quality code have significantly streamlined our projects. Their attention to detail and 
+			problem-solving skills are unparalleled. I highly recommend their to anyone seeking top-notch coding solutions!"</p>
+		</br>
+		</div>
+
+		<div class="round-frame">
+        <img src="testimonial/org2.jpg" alt="org2">
+		</div>
+		<div class = "description">
+		<div class = "name2">
+		<h2>James | CEO at CodeCraft Solutions Ltd.</h2>
+		<p>"Partnering with them for our coding requirements has been an exceptional experience. Their skilled developers 
+			consistently produce clean, efficient, and innovative code. Their commitment to understanding our unique needs and delivering 
+			tailored solutions has been instrumental in elevating our projects. I'm extremely impressed with the professionalism and expertise 
+			demonstrated by their team!"</p>
+		</br>
+		</div>
+	
+ <footer>
+    <p>Copyright © DDT4C S1 2023/2024. All rights reserved.</p>
+  </footer>
+
+    <script>
+        $(document).ready(function() {
+    $('#whatsappButton').click(function() {
+        var phoneNumber = "0197409461";
+        var message = "Hello, I am contacting you regarding...";
+        window.open('https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message));
+    });
+
+    $('#emailButton').click(function() {
+        var email = "info@example.com";
+        window.location.href = 'mailto:' + email;
+    });
+
+    $('#callButton').click(function() {
+        var phoneNumber = "123-456-7890";
+        window.open('tel:' + phoneNumber);
+    });
+});
+
+    </script>
+</body>
+</html>

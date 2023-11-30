@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <marquee>DFT40163 S1 2023/2024 LAB TASK 5</marquee>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Your content -->
+    <div id="about-us">
+        <div class="main-content">
+            <!-- Collapsible Section for Our Awards -->
+            <h2>Our Awards</h2>
+            <div class="awards-collapsibles">
+                <div class="award-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> Excellence in Algorithm Design Award</div>
+                    <div class="content">
+                        <p>Honoring exceptional proficiency in algorithm design, this award recognizes individuals who have exhibited remarkable 
+							prowess in developing innovative algorithms. It celebrates the mastery of problem-solving strategies, efficiency in code
+							implementation, and the ability to create optimized solutions to complex computational challenges. Recipients of this award
+							have demonstrated outstanding skills in designing algorithms that significantly enhance computational efficiency, 
+							scalability, or functionality.</p>
+                    </div>
+                </div>
+                <div class="award-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> Innovator of the Year in Software Development Award</div>
+                    <div class="content">
+                        <p>Recognizing the visionary contributions of individuals who have reshaped the landscape of software development, this 
+							award celebrates innovation, groundbreaking ideas, and transformative solutions. It highlights those whose creative 
+							thinking, technical expertise, and relentless pursuit of excellence have led to the creation of pioneering software 
+							products, tools, or methodologies. Recipients of this award have significantly impacted the industry through their 
+							innovative approaches, redefining the future of software development.</p>
+                    </div>
+                </div>
+                <div class="award-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> Rising Star Coder Award</div>
+                    <div class="content">
+                        <p>Designed to acknowledge and celebrate emerging talent in the coding community, the Rising Star Coder Award honors 
+							individuals who have displayed exceptional promise and rapid growth in their coding journey. This award recognizes
+							the dedication, enthusiasm, and continuous improvement demonstrated by budding coders. It celebrates their potential 
+							to become future leaders and influencers within the coding realm, showcasing their early achievements and the promise 
+							of their evolving coding skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible Section for Our Certificates -->
+            <h2>Our Certificates</h2>
+            <div class="certificates-collapsibles">
+                <!-- Certificate Collapsible: CODECRAFT MASTERY -->
+                <div class="certificate-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> CODECRAFT MASTERY</div>
+                    <div class="content">
+                        <p><a href="cert/mila.png" target="_blank"><img src="cert/mila.png" alt="CODECRAFT MASTERY Certificate"></a></p>
+                    </div>
+                </div>
+                <!-- Certificate Collapsible: INNOVATION IN CODING -->
+                <div class="certificate-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> INNOVATION IN CODING</div>
+                    <div class="content">
+                        <p><a href="cert/nabihah.png" target="_blank"><img src="cert/nabihah.png" alt="INNOVATION IN CODING Certificate"></a></p>
+                    </div>
+                </div>
+                <!-- Certificate Collapsible: CODE GENIUS ACHIEVEMENT -->
+                <div class="certificate-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> CODE GENIUS ACHIEVEMENT</div>
+                    <div class="content">
+                        <p><a href="cert/farzana.png" target="_blank"><img src="cert/farzana.png" alt="CODE GENIUS ACHIEVEMENT Certificate"></a></p>
+                    </div>
+                </div>
+                <!-- Certificate Collapsible: CODING TRAILBLAZER -->
+                <div class="certificate-collapsible">
+                    <div class="collapsible-header"><i class="fas fa-plus"></i> CODING TRAILBLAZER</div>
+                    <div class="content">
+                        <p><a href="cert/dina.png" target="_blank"><img src="cert/dina.png" alt="CODING TRAILBLAZER Certificate"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p style="text-align: center;">Copyright © DDT4C S1 2023/2024. All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible-header').click(function() {
+                var content = $(this).next('.content');
+                if (content.is(':visible')) {
+                    content.slideUp();
+                } else {
+                    $('.content').slideUp(); // Close other open sections
+                    $('.collapsible-header').removeClass('active'); // Remove active class from other headers
+                    $(this).addClass('active'); // Add active class to the clicked header
+                    content.slideDown();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

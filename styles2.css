@@ -1,0 +1,210 @@
+body {
+  font-family: 'Lobster', cursive; /* Change the font to Lobster, or choose your preferred font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe4b5, #ffc0cb); /* Soft pink to soft yellow gradient */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #444; /* Dark gray navbar background */
+  margin: 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #ffd700; /* Change color on hover (gold) */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+marquee {
+  background-color: #b71c1c;
+  direction: right;
+  color: white;
+  padding: 10px;
+}
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* Style for collapsibles */
+[data-role="collapsible"] {
+  margin-bottom: 10px;
+}
+
+.award-collapsible {
+  margin-bottom: 10px;
+}
+
+.award-collapsible h3 {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.award-collapsible .content {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for active collapsible */
+.award-collapsible input:checked + label {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.award-collapsible input:checked ~ .content {
+  display: block;
+}
+
+.certificates-collapsibles {
+  margin-top: 20px;
+}
+
+.certificate-collapsible {
+  margin-bottom: 10px;
+}
+
+.certificate-collapsible summary {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.certificate-collapsible .content {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+
+/* Styling for active collapsible */
+.certificate-collapsible[open] .content {
+  display: block;
+}
+
+.certificate-collapsible img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Style for collapsibles */
+.awards-collapsibles,
+.certificates-collapsibles {
+    margin-top: 20px;
+}
+
+.award-collapsible,
+.certificate-collapsible {
+    margin-bottom: 10px;
+}
+
+.collapsible-header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+
+/* Styling for active collapsible */
+.collapsible-header.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.collapsible-header.active + .content {
+    display: block;
+}
+/* Your existing CSS styles */
+/* ... */
+
+/* Style for collapsibles */
+.awards-collapsibles,
+.certificates-collapsibles {
+    margin-top: 20px;
+}
+
+.award-collapsible,
+.certificate-collapsible {
+    margin-bottom: 10px;
+}
+
+.collapsible-header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+
+/* Styling for active collapsible */
+.collapsible-header.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.collapsible-header.active + .content {
+    display: block;
+}
+

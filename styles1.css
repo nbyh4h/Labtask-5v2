@@ -1,0 +1,161 @@
+body {
+  font-family: 'Lobster', cursive; /* Change the font to Lobster, or choose your preferred font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe4b5, #ffc0cb); /* Soft pink to soft yellow gradient */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #444; /* Dark gray navbar background */
+  margin: 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #ffd700; /* Change color on hover (gold) */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+marquee {
+  background-color: #b71c1c;
+  direction: right;
+  color: white;
+  padding: 10px;
+}
+
+/* Add some styling for tables */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style for table headers */
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px; /* Adjust padding for headers */
+  text-align: center; /* Center-align text in headers */
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px; /* Adjust padding for data cells */
+  text-align: left;
+}
+
+/* Apply specific styles to the first row of the table (header row) */
+tr:first-child {
+  background-color: #555; /* Darker background for the header row */
+}
+
+/* Apply specific styles to alternate rows for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover effect on table rows */
+tr:hover {
+  background-color: #ddd; /* Light gray background on hover */
+}
+
+/* Style for collapsibles */
+[data-role="collapsible"] {
+  margin-bottom: 10px;
+}
+
+/* Add styling for the buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 535px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.round-frame {
+  border-radius: 50%;
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  margin: 10px auto 20px; /* Center the images with some margin */
+}
+
+.round-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain the aspect ratio and cover the entire circle */
+  border-radius: 50%; /* Ensure the image itself is also circular */
+}
+
+description{
+	text-align : left;
+}
+.au-content .ui-collapsible {
+  margin-bottom: 20px;
+}
+
+.name{
+	text-align: center;
+}
+
+.name2{
+	text-align: center;
+}
+
+.au-content .ui-collapsible-heading {
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.au-content .ui-collapsible-heading:hover {
+  background-color: #e0e0e0;
+}
+
+.au-content .ui-collapsible-heading i {
+  float: right;
+}
+
+.au-content .ui-collapsible-content {
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Additional styles can be added as needed */
